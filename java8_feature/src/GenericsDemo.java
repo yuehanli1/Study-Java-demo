@@ -36,11 +36,15 @@ public class GenericsDemo<T> {
         System.out.println("-------------basic-----------------");
         basic();
         System.out.println("-------------advance-----------------");
+        advance();
+
+    }
+
+    private static void advance() {
         String[] arr = asArrays("one", "two", "three");
         System.out.println(Arrays.toString(arr));
         String[] firstTwo = pickTwo("one", "two", "three");
         System.out.println(Arrays.toString(firstTwo));
-
     }
 
     private static <K> K[] pickTwo(K one, K two,K three) {
